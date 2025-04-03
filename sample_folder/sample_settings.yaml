@@ -1,0 +1,39 @@
+camera_model: 'your_camera'
+
+src_folders:
+  1: [sample_folder/src_1, sample_folder/val]
+
+# calibration_type: 'standard'
+calibration_type: 'release_object'
+
+calibrate_tangential_distortion: false
+calibrate_radial_k3: true
+calibrate_radial_k4_k5_k6: false
+calibrate_tilt: false
+
+pattern_type: acircles
+# pattern_type: chessboard
+# pattern_type: charuco
+
+pattern_size: [9, 25]
+
+square_size_mm: 15
+
+filterByArea: true
+minArea: 5000
+maxArea: 70000
+
+sensor_width_px: 6000
+sensor_height_px: 4000
+
+sensor_width_mm: 23.6
+sensor_height_mm: 15.6
+
+focal_length: 23
+
+seed: 422914974
+minimum_number_of_pictures: 3
+
+plot: false
+compute_standard_deviation: true
+z_factor: 1.96  # 95% confidence interval
